@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To Do List</title>`
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class = "box" id = "heading">
+            <h1> <%= KindOfDay %></h1>
+        </div>
+
+
+        <div class = "box" class = "item">
+          
+    
+            <ul input-type = "checkbox">
+               <li>Buy Food</li>
+               <li>Cook Food</li>
+               <li>Eat Food</li>
+    
+              
+               <% for( i = 0 ; i < newListItems.length ; i++){ %>
+                   <li> <%= newListItems[i] %></li>
+               <%   } %>
+            </ul>   
+     
+        </div>
+   </body>
+        <form class = "item" class = "form" action = "/" method = "post">
+            <input type = "text" name = "newItem" placeholder="New Item" autocomplete="off">
+            <button type = "submit" class = "button">+</button>
+        </form>
+     <div class = "footer">
+        <p>The App Brewery@Co.Ltd</p>
+     </div>
+    </body>
+</html>
